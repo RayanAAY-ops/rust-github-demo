@@ -22,3 +22,10 @@ release:
 	cargo build --release
 
 all: format lint test run
+
+rust-setup:
+	cargo init --name=package_name
+	touch src/lib.rs
+	mkdir tests
+	touch tests/test_lib.rs
+	
